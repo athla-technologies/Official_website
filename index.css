@@ -326,7 +326,7 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height:75vh;
+    height:80vh;
 }
 
 .landing-page {
@@ -334,7 +334,7 @@
     transition: transform 1s ease; /* Smooth transition */
     position: absolute;
     top: 0;
-    left: 5%;
+    left: 4%;
     margin: 0 auto;
     height: 100%;
     display: flex;
