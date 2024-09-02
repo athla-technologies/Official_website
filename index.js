@@ -33,9 +33,5 @@ document.addEventListener('DOMContentLoaded', function () {
         currentIndex = nextIndex;
     }
 
-<<<<<<< HEAD
-    setInterval(rotate, 4000); // Rotate every 4 seconds
-=======
     setInterval(rotate, 6000); // Rotate every 4 seconds
->>>>>>> sujeet_codes
 });
