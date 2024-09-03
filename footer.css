@@ -26,8 +26,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--secoundary-color);
+    background-color: var(--quadra-color);
     gap: 2vh;
+    color: var(--theme);
   }
 
   .nav-bottom{
@@ -36,7 +37,7 @@
 
   }
   .nav-bottom a{
-    color: var(--primary-letter-color);
+    color: var(--theme);
   }
 
   .wrap-links-sm{
@@ -55,7 +56,7 @@
     left:0;
     width: 30%;
     height: 1px;
-    background-color: rgb(22, 27, 44,0.2);
+    background-color: rgba(255, 255, 255,0.5);
   }
   .wrap-links-sm::after{
     position: relative;
@@ -63,11 +64,11 @@
     left:0;
     width: 30%;
     height: 1px;
-    background-color: rgb(22, 27, 44,0.2);
+    background-color: rgba(255, 255, 255,0.5);
   }
 
   .wrap-links-sm a{
-    color: var(--primary-letter-color);
+    color: var(--theme);
   }
 
   
