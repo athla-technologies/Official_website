@@ -35,3 +35,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setInterval(rotate, 5000); // Rotate every 4 seconds
 });
+
+

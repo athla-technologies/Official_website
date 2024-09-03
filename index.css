@@ -1,6 +1,5 @@
 /* imported links */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 @font-face {
   font-family: satoshi;
   src: url("./fonts/Satoshi-Regular.ttf");
@@ -28,23 +27,24 @@
 
 /* root styling */
 :root {
-  --font: satoshi;
-  --logo-font:"Exo 2", sans-serif;
-  --theme: #ffffff;
-  --primary-color: #4ea5ff;
-  --secoundary-color: #71d0fa;
-  --tri-color: #292f36;
-  --primary-letter-color: #161b2c;
-  --secoundary-letter-color: #b7bdc8;
-  --font-bolder: 900;
-  --font-medium: 600;
-  --font-thin: 200;
-  --font-lg: clamp(20px, calc(2rem + 3vw), 3rem);
-  --font-md: clamp(18px, calc(0.7rem + 1vw), 2rem);
-  --font-sm: clamp(16px, calc(0.6rem + 1vw), 1rem);
-  --primary-font: "Inter", sans-serif;
-  --large-size-padding: 0 8vw;
-}
+    --font: satoshi;
+    --theme: #ffffff;
+    --primary-color: #4ea5ff;
+    --secoundary-color: #f2f2f2;
+    
+    --tri-color: #292f36;
+    --quadra-color:#71d0fa;
+    --primary-letter-color: #161b2c;
+    --secoundary-letter-color: #b7bdc8;
+    --font-bolder: 900;
+    --font-medium: 600;
+    --font-thin: 200;
+    --font-lg: clamp(20px, calc(2rem + 3vw), 3rem);
+    --font-md: clamp(18px, calc(0.7rem + 1vw), 2rem);
+    --font-sm: clamp(16px, calc(0.6rem + 1vw), 1rem);
+    --logo-font:"Exo 2", sans-serif;
+    --large-size-padding: 0 8vw;
+  }
 
 /* header */
 
@@ -75,39 +75,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &>.logo-text{
-    margin-bottom:5px;
-    font-size: 22px;
-    font-weight: 600;
-    font-family: var(--logo-font);
-    display: flex;
-    flex-direction: column;
-
-    &>span{
-      font-size: 10px;
-    }
-  }
 }
-
-.img{
-  position: relative;
-  width: fit-content;
-  height: fit-content;
-  z-index: 1;
-}
-
-/* .img::after{
-  content: '';
-  position:absolute;
-  left: 5%;
-  top:9%;
-  width: 100%;
-  height: 100%;
-  background-color: var(--secoundary-color);
-  z-index: -1;
-} */
-
 .header .logo {
   width: 36px;
   height: 100px;
@@ -163,16 +131,6 @@
   color: var(--secoundary-color);
 }
 
-/* main */
-
-.main {
-}
-
-/* landing page */
-
-
-
-
 .wrap-scrool {
     position: relative;
     display: flex;
@@ -188,12 +146,12 @@
     flex: 0 0 100%; /* Each slide takes up 100% of the container width */
     transition: transform 1s ease; /* Smooth transition */
     position: absolute;
-    top: 0;
+    top: 5%;
     padding: var(--large-size-padding);
     margin: 0% auto;
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    height: 95%;
     display: flex;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -289,12 +247,10 @@
 .about-page {
   font-family: var(--font);
   width: 100%;
-  padding: var(--large-size-padding);
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding: 12vh;
   display: flex;
   justify-content: space-between;
-  background-color: var(--secoundary-color);
+  background-color: var(--quadra-color);
   color: var(--primary-letter-color);
 }
 
@@ -314,10 +270,10 @@
 .about-content {
   display: flex;
   flex-direction: column;
- 
   font-weight: var(--font-thin);
-  font-size: var(--font-md);
-
+  &>h1{
+    font-size: var(--font-lg);
+  }
 }
 
 .about-content p{
@@ -345,6 +301,18 @@
 }
 
 .about-img{
-     transform: translateY(15%);
+     transform: translateY(10%);
 }
 
+.logo-text{
+    margin-bottom:5px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--logo-font);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text span{
+    font-size: 10px;
+}
