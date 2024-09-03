@@ -132,16 +132,6 @@
   color: var(--secoundary-color);
 }
 
-/* main */
-
-.main {
-}
-
-/* landing page */
-
-
-
-
 .wrap-scrool {
     position: relative;
     display: flex;
@@ -258,10 +248,7 @@
 .about-page {
   font-family: var(--font);
   width: 100%;
-  padding: var(--large-size-padding);
-   padding-top: 20vh;
-   padding-bottom: 20vh;
-  
+  padding: 13vh; 
   display: flex;
   justify-content: space-between;
   background-color: var(--quadra-color);
@@ -284,9 +271,12 @@
 .about-content {
   display: flex;
   flex-direction: column;
- 
   font-weight: var(--font-thin);
   font-size: var(--font-md);
+
+  &>h1{
+    font-size: var(--font-lg);
+  }
 
 }
 
