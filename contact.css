@@ -1,20 +1,4 @@
-:root {
-    --font: satoshi;
-    --theme: #ffffff;
-    --primary-color: #4ea5ff;
-    --secoundary-color: #f2f2f2;
-    --tri-color: #292f36;
-    --primary-letter-color: #161b2c;
-    --secoundary-letter-color: #b7bdc8;
-    --font-bolder: 900;
-    --font-medium: 600;
-    --font-thin: 200;
-    --font-lg: clamp(20px, calc(2rem + 3vw), 3rem);
-    --font-md: clamp(18px, calc(0.7rem + 1vw), 2rem);
-    --font-sm: clamp(16px, calc(0.6rem + 1vw), 1rem);
-    --primary-font: "Inter", sans-serif;
-    --large-size-padding: 0 8vw;
-  }
+
 
 
   .contacts-container{
