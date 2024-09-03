@@ -262,7 +262,7 @@
   
   display: flex;
   justify-content: space-between;
-  background-color: var(--tri-color);
+  background-color: var(--secoundary-color);
   color: var(--primary-letter-color);
 }
 
