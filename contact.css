@@ -72,4 +72,13 @@
   #submit-btn{
      background-color: var(--primary-color);
     color: var(--theme);
+    font-size: var(--font-medium);
+    padding:10px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &:hover{
+      background-color: #4794e7;
+    }
   }
