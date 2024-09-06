@@ -59,7 +59,7 @@
        resize: none;
    }
 
-  input{
+ .contacts-container .form input{
     padding: 10px ;
     min-width: 30rem;
     border-radius: 5px;
