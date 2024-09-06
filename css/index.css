@@ -188,7 +188,7 @@ a{
     
   }
   .wrap-scrool::before{
-    background: url('./img/Grid_background.jpg');
+    background: url('../img/Grid_background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
