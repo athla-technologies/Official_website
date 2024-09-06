@@ -1,5 +1,7 @@
 /* imported links */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
 @font-face {
   font-family: satoshi;
   src: url("../fonts/Satoshi-Regular.ttf");
@@ -144,10 +146,6 @@ a{
 }
 
 /* main */
-
-.main {
-}
-
 /* landing page */
 
 
@@ -326,41 +324,119 @@ a{
 .about-page {
   font-family: var(--font);
   width: 100%;
-  padding: var(--large-size-padding);
-   padding-top: 10vh;
-   padding-bottom: 15vh;
-  
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
+ 
+  
   background-color: var(--quadra-color);
   color: var(--primary-letter-color);
+  position: relative;
 }
-
+.wrap-about-page{
+  position: relative;
+}
 .about-page > * {
   flex: 1;
 }
+
+.about-page .heading{
+  font-size: calc(var(--font-lg));
+  font-family:"Playwrite CU", cursive;
+  color: white;
+  padding:20px;
+  margin:40px;
+  margin-left:6rem;
+}
+
+.who-we-are{
+  display: flex;
+  
+ 
+  
+  &>h1{
+     text-align: start;
+  }
+  &>img{
+    width: 60%;
+    height: 50vh;
+    object-fit: cover;
+    position: absolute;
+    top:32%;
+    right: -1%;
+
+  }
+}
+
+.who-we-are{
+  padding-left: 5%;
+  color: var(--theme);
+  font-family: var(--font);
+  position:relative;
+}
+
+.headin-a{
+  position: relative;
+  display: block;
+  width: fit-content;
+}
+
+.headin-a::before{
+  content: '';
+  position: absolute;
+
+  bottom:0;
+  background-color: var(--theme);
+  height: 2px;
+  animation: underline1 linear 1.5s infinite;
+  
+}
+
+@keyframes underline1 {
+  0%{
+    left: 0;
+    width: 0%;
+  }
+  50%{
+    width: 100%;
+    right: 0;
+  }
+  100%
+  {
+    left: unset;
+    width: 0%;
+  }
+  
+}
+
+.content-we{
+  width:35vw;
+  margin-left:8%;
+  margin-top:20px;
+}
 .wrap-about h1{
-    font-size: var(--font-md);
+    font-size:calc( var(--font-lg) - 10px);
+    font-weight: var(--font-bolder);
 }
 .wrap-about{
     display: flex;
-    background-color: var(--theme);
-     gap: 5vw;
-      padding: var(--large-size-padding);
-      padding-top: 10vh;
 }
 .about-content {
   display: flex;
   flex-direction: column;
- 
+  justify-content: center;
+  align-items: center;
   font-weight: var(--font-thin);
   font-size: var(--font-md);
+  color: var(--theme);
 
 }
 
 .about-content p{
     margin: 3% 0;
-    font-size: var(--font-sm);
+    font-size:calc( var(--font-md) - 6px);
+    text-align: center;
+    text-transform: uppercase;
+
 }
 
 .about-content .about-btn {
