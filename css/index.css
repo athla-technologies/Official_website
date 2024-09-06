@@ -151,6 +151,7 @@ html{
     height: 100vh;
     overflow-x: hidden;
     transition: 0.5s ease;
+    
   }
   
   .landing-page {
@@ -177,7 +178,7 @@ html{
     
   }
   .wrap-scrool::before{
-    background: url('./img/Grid_background.jpg');
+    background: url('../img/Grid_background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,6 +347,7 @@ html{
 
   &>h1{
     font-size: var(--font-lg);
+    text-align: justify;
   }
 
 }
