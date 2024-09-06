@@ -47,6 +47,11 @@
     --large-size-padding: 0 8vw;
   }
 
+  html,body{
+    scroll-behavior: smooth!important;
+  
+  }
+
 /* header */
 
 .header {
@@ -168,13 +173,30 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     /* min-height: 100vh; */
-    background-color: var(--theme);
+    
     margin: 0 auto;
     align-items: center;
     width: 100vw;
-    background-color: var(--theme);
+    z-index: 10;
+     
+    
+    
   }
-  
+  .landing-page::before{
+    background: url('./img/Grid_background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    opacity: 0.1;
+   
+  }
   .landing-page .landing-inside {
     width: 50%;
     display: flex;
