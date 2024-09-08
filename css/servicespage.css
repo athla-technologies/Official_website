@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 @font-face {
   font-family: satoshi;
   src: url("../fonts/Satoshi-Regular.ttf");
@@ -212,7 +214,7 @@ html,body{
     
 }
 .landing-page .landing-inside {
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     align-items: flex-start;
 }
@@ -226,6 +228,7 @@ html,body{
 
 .landing-page .landing-inside {
     display: flex;
+    gap:30px;
     flex-direction: column;
 }
 
@@ -233,14 +236,16 @@ html,body{
     color: var(--primary-color);
     text-transform: uppercase;
     position: relative;
+    letter-spacing: 5px;
+    font-size: calc(var(--font-md) - 5px);
 }
 
 .landing-page .landing-quort {
-    font-size: calc(var(--font-lg) + 2rem);
+    font-size: calc(var(--font-lg) + 3.5rem);
     transform: translateY(0px);
     transition: 0.5s ease;
     opacity: 1;
-    margin-bottom: 2rem;
+    margin-left:3rem;
     margin-top:1rem;
     line-height: 4rem !important;
     display: flex;
@@ -265,6 +270,7 @@ html,body{
     transition: 0.5s ease;
     opacity: 1;
     overflow: visible;
+    margin-left:3rem;
 }
 
 .landing-page .wrap-img .image {
@@ -344,7 +350,7 @@ html,body{
 
 .web-dev-img{
     position: absolute;
-    top:-50%;
+    top:-55%;
     right:3%;
     &>img{
         width:40vw;
@@ -355,9 +361,334 @@ html,body{
 .web-dev-content{
     width:45vw;
     margin-left:10vw;
-    font-size: calc(var(--font-md) - 3px);
+    font-size: calc(var(--font-md) - 6px);
     line-height: 36px;
     letter-spacing:2px;
     font-weight: 300;
+    margin-top:2vh;
 }
 
+.work-with-us{
+    padding: var(--large-size-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--theme);
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    &>.h-work-us{
+       text-transform: uppercase;
+       font-family: var(--inter-font);
+       letter-spacing: 3px;
+       font-size: 20px;
+
+    }
+    &>.btn-invite{
+       color: var(--theme);
+       margin-left: 5rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: fit-content;
+       position: relative;
+       padding: 10px 20px;
+       z-index: 110;
+       font-weight: 500;
+       gap:10px;
+       text-transform: uppercase;
+       font-family: var(--inter-font);
+       transition: 0.5s ease;
+       
+    }
+    &>.content{
+        font-size:calc( var(--font-lg) + 7px);
+        padding: 2rem  5rem ;
+        font-family: var(--inter-font)!important;
+        font-weight: 800;
+    }
+}
+
+@keyframes invite-btn {
+     0%{
+        left:0%;
+    }
+    100%{
+        left:68%;
+     }
+}
+
+@keyframes invite-btn-reverse {
+    0%{
+       left:68%;
+   }
+   100%{
+       left:0%;
+    }
+}
+.btn-invite::after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+    opacity: 0.8;
+    animation: invite-btn-reverse 1.5s forwards ease-in-out;
+}
+
+.btn-invite:hover::after{
+    animation: invite-btn 1.5s forwards ease-in-out;
+}
+
+.why-athla{
+    background-image: url('../img/bluestroke.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:55vw;
+    padding: var(--large-size-padding);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:var(--theme);
+    gap:30px;
+    &>h3{
+        font-size: calc(var(--font-lg) - 0.3rem);
+        font-weight: 600;
+    }
+    &>.content{
+        padding:0 23vw;
+        font-weight: 400;
+        font-size:calc(var(--font-md) - 5px);
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+}
+
+.how-it-works{
+    text-align: center;
+    color: #333;
+    font-size: calc(var(--font-lg) - 0.3rem);
+    font-weight: bold;
+    font-family: var(--font);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+}
+
+.timeline {
+    position: relative;
+}
+
+/* Main timeline line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ccc;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Base item style */
+.item {
+    margin-bottom: 40px;
+    position: relative;
+    width: 50%;
+}
+
+/* Odd and even alignment */
+.item:nth-child(odd) {
+    left: 0;
+    padding-right: 33px;
+    text-align: right;
+}
+
+.item:nth-child(even) {
+    left: 50%;
+    padding-left: 33px;
+    text-align: left;
+}
+
+/* Circles for each item */
+.item::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid;
+    top: 20px;
+    z-index: 2;
+}
+
+.item:nth-child(odd)::before {
+    right: -13px;
+}
+
+.item:nth-child(even)::before {
+    left: -13px;
+}
+
+/* Color variations for timeline items */
+.item:nth-child(1)::before { border-color: #1abc9c; }
+.item:nth-child(2)::before { border-color: #3498db; }
+.item:nth-child(3)::before { border-color: #e74c3c; }
+.item:nth-child(4)::before { border-color: #f39c12; }
+.item:nth-child(5)::before { border-color: #9b59b6; }
+
+/* Icon base style */
+.icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    top: 10px;
+    z-index: 2;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.3s ease;
+}
+
+.item:nth-child(odd) .icon {
+    right: -68px;
+    top:13px;
+}
+
+.item:nth-child(even) .icon {
+    left: -68px;
+    top:13px;
+}
+
+/* Card effect for content */
+.container .content {
+    background: #fff;
+    padding: 21px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.container .content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.how-works-heading {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+ .how-works-content{
+    color: #666;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Hover Effects for Icons */
+
+/* Bulb (💡): Glowing + Bouncing */
+.item:nth-child(1):hover .icon {
+    animation: glowBounce 1s ease-in-out infinite;
+    background-color: #ffeb3b;
+    box-shadow: 0 0 15px 5px rgba(255, 235, 59, 0.7);
+}
+
+@keyframes glowBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Microscope (🔬): 3D Flip + Color Change */
+.item:nth-child(2):hover .icon {
+    transform: rotateY(360deg);
+    background-color: #3498db;
+    color: white;
+}
+
+/* Chess piece (♟): Gradient + Spin */
+.item:nth-child(3):hover .icon {
+    background: linear-gradient(135deg, #e74c3c, #8e44ad);
+    transform: rotate(360deg);
+    color: #fff;
+}
+
+/* Hammer (🛠): Pulsating Scale-Up + Shadow */
+.item:nth-child(4):hover .icon {
+    animation: pulsate 1s ease-in-out infinite;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulsate {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Target (🎯): Spin + Pulse */
+.item:nth-child(5):hover .icon {
+    animation: spinPulse 1s ease-in-out infinite;
+    background-color: #9b59b6;
+}
+
+@keyframes spinPulse {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 40px;
+    }
+
+    .item {
+        width: 100%;
+        left: 0;
+        padding-left: 80px;
+        padding-right: 0;
+    }
+
+    .item::before {
+        left: 33px;
+    }
+
+    .icon {
+        left: 0;
+    }
+}

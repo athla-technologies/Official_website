@@ -1,8 +1,6 @@
 .new_footer_area {
     background: #fbfbfd;
 }
-
-
 .new_footer_top {
     padding: 120px 0px 270px;
     position: relative;
@@ -45,8 +43,6 @@ a:hover, a:focus, button:hover, button:focus {
     text-decoration: none;
     outline: none;
 }
-
-
 
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
     color: var(--primary-color);
@@ -94,6 +90,7 @@ a:hover, a:focus, button:hover, button:focus {
 .ti-vimeo-alt:before {
     content: "\e74a";
 }
+
 .ti-pinterest:before {
     content: "\e731";
 }
@@ -129,7 +126,7 @@ a:hover, a:focus, button:hover, button:focus {
 .f_size_18 {
     font-size: 18px;
 }
-h1, h2, h3, h4, h5, h6 {
+.f-title {
     color: #4b505e;
 }
 .new_footer_top .f_widget.about-widget .f_list li a {
