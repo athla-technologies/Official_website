@@ -380,7 +380,7 @@ a{
 }
 
 .logo-text{
-    margin-bottom:5px;
+    margin-bottom:8px;
     font-size: 22px;
     font-weight: 600;
     font-family: var(--logo-font);
@@ -389,6 +389,7 @@ a{
 }
 
 .logo-text span{
+    margin-top:-4px;
     font-size: 10px;
 }
 
