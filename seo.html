@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="./css/servicespage.css" />
     <link rel="stylesheet" href="./css/footer.css" />
 
-
+    <style>
+        .landing-page .landing-quort {
+            font-size: calc(var(--font-lg) + 1.5rem);
+        }
+    </style>
 </head>
 <body>
     <div class="main-container">
@@ -25,7 +29,18 @@
               <nav class="nav-bar">
                 <a href="./index.html" class="nav-item">Home</a>
                 <a href="#About" class="nav-item">About</a>
-                <a href="./index.html" class="nav-item">Services</a>
+                <div class="service-nav">
+                    <a href="#Services" class="nav-item">Services</a>
+                    <div class="service-nav-container">
+                      <div class="service-nav-items">
+                        <a href="./service.html">web Design</a>
+                        <a href="./graphic.html">Graphic Design</a>
+                        <a href="./Digital.html">Digital Marketing</a>
+                        <a href="./seo.html">Search Engine Optimization</a>
+                        <a href="./video.html">Video Editing</a>
+                      </div>
+                    </div>
+                  </div>
                 <a href="" class="nav-item">Works</a>
               </nav>
               <a href="#Contacts" class="contact-btn" target="_blank">Contact Us</a>
@@ -42,7 +57,9 @@
                     <div class="landing-inside">
                         <div class="tag">Services</div>
                         <h1 class="landing-quort">
-                            <span> S E O</span>
+                            <span>Search</span>
+                            <span>Engine</span>
+                            <span>Optimization</span>
                         </h1>
                         <!-- <p class="content">We create digital experiences that captivate and engage from start to finish. Our approach focuses on seamless design and intuitive navigation to keep users connected and satisfied. Let us help you craft an engaging online presence that stands out.</p> -->
                         <!-- <div class="buttons-landing">
@@ -114,7 +131,7 @@
             <div class="work-with-us">
                 <h2 class="h-work-us">Work with us ?</h2>
                 <div class="content">Let's work together to  <br>build something great.</div>
-                <a href="" class="btn-invite">Invite Us &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="./index.html#Contacts" class="btn-invite">Invite Us &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- footer -->

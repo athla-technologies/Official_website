@@ -123,6 +123,40 @@ html,body{
     color: var(--primary-color);
 }
 
+.service-nav{
+    display: inline-block;
+    position: relative;
+  }
+  
+  .service-nav-container{
+    display: none;
+    position: absolute;
+    left:-50%;
+  }
+  .service-nav:hover .service-nav-container{
+    display: block;
+  }
+  .service-nav-items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    background-color: white;
+    width:16rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding:20px;
+    border-radius: 10px;
+    &>a{
+      color: var(--primary-letter-color);
+      padding:7px;
+    }
+    &>a:hover{
+      background-color: var(--primary-color);
+      border-radius:5px;
+      color:white;
+    }
+  }
+
 .header .contact-btn {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
@@ -255,7 +289,7 @@ html,body{
     line-height: 4rem !important;
     display: flex;
     flex-direction: column;
-    gap:16px;
+    gap:25px;
 }
 
 .landing-info {
@@ -689,7 +723,7 @@ html,body{
 /* Target (🎯): Spin + Pulse */
 .item:nth-child(4):hover .icon {
     animation: spinPulse 1s ease-in-out infinite;
-    background-color: #ada9a6;
+    background-color: #eb8918;
 }
 
 @keyframes spinPulse {
