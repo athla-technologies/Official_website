@@ -552,6 +552,13 @@ html,body{
 .item:nth-child(4)::before { border-color: #f39c12; }
 .item:nth-child(5)::before { border-color: #9b59b6; }
 
+
+.item:nth-child(1) > .content{  border:2px solid #1abc9c; }
+.item:nth-child(2) > .content{  border:2px solid #3498db; }
+.item:nth-child(3) > .content{  border:2px solid #e74c3c; }
+.item:nth-child(4) > .content{  border:2px solid #f39c12; }
+.item:nth-child(5) > .content{  border:2px solid #9b59b6; }
+
 /* Icon base style */
 .icon {
     position: absolute;
@@ -596,7 +603,7 @@ html,body{
 
 .how-works-heading {
     margin-bottom: 10px;
-    color: #333;
+    color: #0e0d0d;
     font-size: 18px;
 }
 
@@ -634,10 +641,21 @@ html,body{
 /* Chess piece (♟): Gradient + Spin */
 .item:nth-child(3):hover .icon {
     background: linear-gradient(135deg, #e74c3c, #8e44ad);
-    transform: rotate(360deg);
+    animation: piece 1.5s ease-in-out infinite;
     color: #fff;
 }
 
+@keyframes piece {
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
 /* Hammer (🛠): Pulsating Scale-Up + Shadow */
 .item:nth-child(4):hover .icon {
     animation: pulsate 1s ease-in-out infinite;
