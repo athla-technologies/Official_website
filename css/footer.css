@@ -90,7 +90,10 @@ a:hover, a:focus, button:hover, button:focus {
 .ti-vimeo-alt:before {
     content: "\e74a";
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6b42104a269e977b082fb75114418e66ea5d181f
 .ti-pinterest:before {
     content: "\e731";
 }
