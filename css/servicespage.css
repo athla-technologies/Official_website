@@ -607,6 +607,10 @@ html,body{
     position: relative;
 }
 
+.how-it-works{
+    padding-top:5rem;
+}
+
 .container .content:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
