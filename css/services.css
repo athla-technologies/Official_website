@@ -74,6 +74,9 @@ margin-top: 5px;
     }
 }
 
+.service-navigation > h1{
+    color:black;
+}
 .services img{
     display: block;
     width:1rem;
