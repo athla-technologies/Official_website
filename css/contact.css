@@ -70,6 +70,15 @@
 
 
   #submit-btn{
-     background-color: var(--primary-color);
+    background-color: var(--primary-color);
     color: var(--theme);
+    padding: 10px;
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    font-size: var(--font-medium);
+
+    &:hover{
+      background-color: #4694e7;
+    }
   }

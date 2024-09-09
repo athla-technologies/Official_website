@@ -38,7 +38,6 @@ a{
     --theme: #ffffff;
     --primary-color: #4ea5ff;
     --secoundary-color: #f2f2f2;
-    
     --tri-color: #292f36;
     --quadra-color:#3e88ce;
     --primary-letter-color: #161b2c;
@@ -49,7 +48,6 @@ a{
     --font-lg: clamp(20px, calc(2rem + 3vw), 3rem);
     --font-md: clamp(18px, calc(0.7rem + 1vw), 2rem);
     --font-sm: clamp(16px, calc(0.6rem + 1vw), 1rem);
-    
     --logo-font:"Exo 2", sans-serif;
     --large-size-padding: 0 8vw;
   }
@@ -91,7 +89,7 @@ a{
   align-items: center;
 }
 .header .logo {
-  width: 36px;
+  width: 56px;
   height: 100px;
   object-fit: cover;
 }
@@ -145,12 +143,6 @@ a{
   color: var(--secoundary-color);
 }
 
-/* main */
-/* landing page */
-
-
-
-
 .wrap-scrool {
     position: relative;
     display: flex;
@@ -160,6 +152,7 @@ a{
     height: 100vh;
     overflow-x: hidden;
     transition: 0.5s ease;
+    
   }
   
   .landing-page {
@@ -423,11 +416,14 @@ a{
 .about-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-weight: var(--font-thin);
   font-size: var(--font-md);
   color: var(--theme);
+
+  &>h1{
+    font-size: var(--font-lg);
+    text-align: justify;
+  }
 
 }
 
@@ -463,7 +459,7 @@ a{
 }
 
 .logo-text{
-    margin-bottom:5px;
+    margin-bottom:8px;
     font-size: 22px;
     font-weight: 600;
     font-family: var(--logo-font);
@@ -472,7 +468,8 @@ a{
 }
 
 .logo-text span{
-    font-size: 10px;
+    margin-top:-4px;
+    font-size: 15px;
 }
 
 .wrap-p{
