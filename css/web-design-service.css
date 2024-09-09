@@ -1,0 +1,380 @@
+:root {
+    --font: satoshi;
+    --theme: #ffffff;
+    --primary-color: #4ea5ff;
+    --secoundary-color: #f2f2f2;
+    --inter-font:"Inter", system-ui;
+    
+    --tri-color: #292f36;
+    --quadra-color:#4ea5ff;
+    --primary-letter-color: #161b2c;
+    --secoundary-letter-color: #b7bdc8;
+    --font-bolder: 900;
+    --font-medium: 600;
+    --font-thin: 200;
+    --font-lg: clamp(20px, calc(2rem + 3vw), 3rem);
+    --font-md: clamp(18px, calc(0.7rem + 1vw), 2rem);
+    --font-sm: clamp(16px, calc(0.6rem + 1vw), 1rem);
+    
+    --logo-font:"Exo 2", sans-serif;
+    --large-size-padding: 0 8vw;
+  }
+
+.detail-services{
+   
+   
+}
+.wrap-landing-services{
+    min-height: 90vh;
+    padding: var(--large-size-padding);
+    
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    &>.ds-heading{
+        font-size:calc( var(--font-md) - 10px);
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--primary-color);
+        
+        
+    }
+    &>.ds-service{
+        font-size:calc( var(--font-lg) + 5rem);
+        text-transform: capitalize;
+        font-weight: 800;
+       
+        margin-left: 3rem;
+        font-family: var(--inter-font);
+        
+    }
+}
+.wrap-content-ds{
+    display: flex;
+    padding: var(--large-size-padding);
+    align-items: center;
+    gap: 5vw;
+    min-height: 70vh;
+
+     &>.image-ds{
+          width: 40vw;
+          object-fit: cover;
+
+     }
+     &>.wrap-content-d{
+        &>.heading{
+            font-size:calc( var(--font-md) + 0.5rem);
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+        &>.content{
+            font-size: calc(var(--font-sm) + 4px );
+        }
+     }
+}
+
+.wrap-content-ds>*{
+    flex: 1;
+}
+
+.why-athla{
+    padding: var(--large-size-padding);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &>.content{
+        padding:0 20vw;
+    }
+}
+
+.work-with-us{
+    padding: var(--large-size-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--theme);
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    &>.h-work-us{
+       text-transform: uppercase;
+       font-family: var(--inter-font);
+       letter-spacing: 3px;
+       font-size: 20px;
+
+    }
+    &>.btn-invite{
+       color: var(--theme);
+       margin-left: 5rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: fit-content;
+       position: relative;
+       padding: 10px 20px;
+       z-index: 110;
+       font-weight: 500;
+       text-transform: uppercase;
+       font-family: var(--inter-font);
+       transition: 0.5s ease;
+       
+    }
+    &>.content{
+        font-size:calc( var(--font-lg) + 7px);
+        padding: 2rem  5rem ;
+        font-family: var(--inter-font)!important;
+        font-weight: 800;
+    }
+}
+
+.btn-invite::after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+    transition: 0.5s ease;
+   }
+
+   .btn-invite:hover:after{
+     width: 100%;
+
+   }
+
+
+
+
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: left;
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .timeline {
+            position: relative;
+        }
+
+        /* Main timeline line */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #ccc;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        /* Base item style */
+        .item {
+            margin-bottom: 40px;
+            position: relative;
+            width: 50%;
+        }
+
+        /* Odd and even alignment */
+        .item:nth-child(odd) {
+            left: 0;
+            padding-right: 40px;
+            text-align: right;
+        }
+
+        .item:nth-child(even) {
+            left: 50%;
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        /* Circles for each item */
+        .item::before {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #fff;
+            border: 2px solid;
+            top: 20px;
+            z-index: 2;
+        }
+
+        .item:nth-child(odd)::before {
+            right: -15px;
+        }
+
+        .item:nth-child(even)::before {
+            left: -15px;
+        }
+
+        /* Color variations for timeline items */
+        .item:nth-child(1)::before { border-color: #1abc9c; }
+        .item:nth-child(2)::before { border-color: #3498db; }
+        .item:nth-child(3)::before { border-color: #e74c3c; }
+        .item:nth-child(4)::before { border-color: #f39c12; }
+        .item:nth-child(5)::before { border-color: #9b59b6; }
+
+        /* Icon base style */
+        .icon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #f0f0f0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            top: 10px;
+            z-index: 2;
+            transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.3s ease;
+        }
+
+        .item:nth-child(odd) .icon {
+            right: -60px;
+        }
+
+        .item:nth-child(even) .icon {
+            left: -60px;
+        }
+
+        /* Card effect for content */
+        .container .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 1;
+            position: relative;
+        }
+
+        .container .content:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 18px;
+        }
+
+        p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Hover Effects for Icons */
+
+        /* Bulb (💡): Glowing + Bouncing */
+        .item:nth-child(1) .icon:hover {
+            animation: glowBounce 1s ease-in-out infinite;
+            background-color: #ffeb3b;
+            box-shadow: 0 0 15px 5px rgba(255, 235, 59, 0.7);
+        }
+
+        @keyframes glowBounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Microscope (🔬): 3D Flip + Color Change */
+        .item:nth-child(2) .icon:hover {
+            transform: rotateY(360deg);
+            background-color: #3498db;
+            color: white;
+        }
+
+        /* Chess piece (♟): Gradient + Spin */
+        .item:nth-child(3) .icon:hover {
+            background: linear-gradient(135deg, #e74c3c, #8e44ad);
+            transform: rotate(360deg);
+            color: #fff;
+        }
+
+        /* Hammer (🛠): Pulsating Scale-Up + Shadow */
+        .item:nth-child(4) .icon:hover {
+            animation: pulsate 1s ease-in-out infinite;
+            box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes pulsate {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* Target (🎯): Spin + Pulse */
+        .item:nth-child(5) .icon:hover {
+            animation: spinPulse 1s ease-in-out infinite;
+            background-color: #9b59b6;
+        }
+
+        @keyframes spinPulse {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            50% {
+                transform: rotate(180deg) scale(1.1);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 40px;
+            }
+
+            .item {
+                width: 100%;
+                left: 0;
+                padding-left: 80px;
+                padding-right: 0;
+            }
+
+            .item::before {
+                left: 33px;
+            }
+
+            .icon {
+                left: 0;
+            }
+        }
+    
