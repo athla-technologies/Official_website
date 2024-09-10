@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing</title>
+
+    <link rel='stylesheete' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/servicespage.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <style>
+        .item:nth-child(1):hover .icon {
+            animation: glowBounce 1s ease-in-out infinite;
+            background-color: #c4174b;
+            box-shadow: 0 0 15px 5px #c4174bb2;
+        }
+        .item:nth-child(2):hover .icon {
+            transform: rotateY(360deg);
+            background-color: #cd82f6;
+            color: white;
+        }
+
+        .item:nth-child(3):hover .icon {
+            background: linear-gradient(45deg, #c51d0a, #e3d5ea);
+            animation: piece 1.5s ease-in-e74c3cout infinite;
+            color: #fff;
+        }
+
+        .item:nth-child(2)::before{  border:2px solid #cd82f6; }
+        .item:nth-child(2) > .content{  border:2px solid #cd82f6; }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="wrap-logo">
+                <img src="../img/logo.svg" alt="" class="logo" />
+                <div class="logo-text">ATHLA <span>TECHNOLOGIES</span></div>
+            </div>
+            <div class="wrap-links">
+              <nav class="nav-bar">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../index.html#About" class="nav-item">About</a>
+                <div class="service-nav">
+                    <a href="#Services" class="nav-item">Services</a>
+                    <div class="service-nav-container">
+                      <div class="service-nav-items">
+                        <a href="./service.html">Web Design</a>
+                        <a href="./graphic.html">Graphic Design</a>
+                        <a href="./Digital.html">Digital Marketing</a>
+                        <a href="./seo.html">Search Engine Optimization</a>
+                        <a href="./video.html">Video Editing</a>
+                      </div>
+                    </div>
+                  </div>
+                <a href="" class="nav-item">Works</a>
+              </nav>
+              <a href="../index.html#Contacts" class="contact-btn">Contact Us</a>
+            </div>
+          </header>
+        <main>
+            <div class="wrap-p" id="Home">
+                <div class="wrap-scrool">
+                    <!-- <div class="slogan">
+                        <img src="../img/bluedots.png" alt="blue dots design" width="60" height="60">
+                        <img src="../img/bluedots.png" alt="blue dots design" width="60" height="60">
+                    </div> -->
+                    <section class="landing-page">
+                    <div class="landing-inside">
+                        <div class="tag">Services</div>
+                        <h1 class="landing-quort">
+                            <span style="font-weight: lighter;">Video Editing</span>
+                        </h1>
+                        <!-- <p class="content">We create digital experiences that captivate and engage from start to finish. Our approach focuses on seamless design and intuitive navigation to keep users connected and satisfied. Let us help you craft an engaging online presence that stands out.</p> -->
+                        <!-- <div class="buttons-landing">
+                        <a href="" class="btn-slider"><svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>Explore</a>
+                        </div> -->
+                    </div>
+                    </section>
+                    <!-- web development -->
+                </div>
+            </div>
+            <div class="web-development">
+                <div class="web-dev-img">
+                    <img src="../img/video_editing.svg" alt="Web Development">
+                </div>
+                <div class="web-dev-content">
+                    We offer professional video editing services to create engaging and polished visual content that captivates your audience. From promotional videos to detailed tutorials, our editing process 
+                    enhances the quality of your footage and ensures a seamless flow. We focus on bringing your vision to life with high-quality edits, including transitions, effects, and sound design, that align with your brand’s message. 
+                    Our goal is to produce videos that not only look professional but also effectively communicate your message and engage viewers, helping you stand out in a crowded digital landscape.
+                </div>
+            </div>
+
+            <!-- how it works -->
+            <div class="container">
+                <h1 class="how-it-works">how it works</h1>
+                <div class="timeline">
+                    <div class="item">
+                        <div class="icon">🎯</div>
+                        <div class="content">
+                            <h2 class="how-works-heading">Brief Concept</h2>
+                            <p class="how-works-content">We begin by discussing your vision, project goals, and the message you want to convey. This ensures the final video aligns with your brand and objectives, whether it's a commercial, tutorial, or social media clip.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">🎥</div>
+                        <div class="content">
+                            <h2 class="how-works-heading">Footage Selection</h2>
+                            <p class="how-works-content">Next, we gather the raw footage and carefully review it, selecting the best clips that tell your story. This includes choosing the best angles, key moments, and any additional visuals needed for the edit.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">✂️</div>
+                        <div class="content">
+                            <h2 class="how-works-heading">Editing & Assembly</h2>
+                            <p class="how-works-content">Our editing team assembles the selected footage into a cohesive sequence. We focus on narrative flow, timing, and smooth transitions to keep the audience engaged throughout the video.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">🎨</div>
+                        <div class="content">
+                            <h2 class="how-works-heading">Visual & Audio Enhancement</h2>
+                            <p class="how-works-content">We apply color correction, audio balancing, and add any necessary visual effects or graphics. This step ensures that both the visual and sound elements are polished and cohesive, enhancing the overall quality of the video.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">🚀</div>
+                        <div class="content">
+                            <h2 class="how-works-heading">Final Delivery</h2>
+                            <p class="how-works-content">Once the edit is complete, we send the video for your feedback. After making any requested adjustments, we deliver the final product in the desired format, ready for distribution across your platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-athla">
+                <h3 class="why-athla-h">Why Athla?</h3>
+                <div class="content">Athla offers professional web development solutions to elevate your business. We specialize in creating sleek, high-quality websites tailored to your needs. Our approach ensures optimal performance and a refined user experience. Partner with us to enhance your online presence with precision and expertise.</div>
+            </div>
+
+            <!-- work with us -->
+            <div class="work-with-us">
+                <h2 class="h-work-us">Work with us ?</h2>
+                <div class="content">Let's work together to  <br>build something great.</div>
+                <a href="../index.html#Contacts" class="btn-invite">Invite Us &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- footer -->
+            <footer class="new_footer_area bg_color">
+                <div class="new_footer_top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                    <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                                    <p>Don't miss any updates of our new templates and extensions.!</p>
+                                    <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                        <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                        <button class="btn btn_get btn_get_two" type="submit">Submit</button>
+                                        <p class="mchimp-errmessage" style="display: none;"></p>
+                                        <p class="mchimp-sucmessage" style="display: none;"></p>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                    <h3 class="f-title f_600 t_color f_size_18">Navigation</h3>
+                                    <ul class="list-unstyled f_list">
+                                        <li><a href="#Home">Home</a></li>
+                                        <li><a href="#About">About Us</a></li>
+                                        <li><a href="#Services">Services</a></li>
+                                        <li><a href="#">Works</a></li>
+                                        <li><a href="#Contacts">Contact Us</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                    <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                                    <div class="f_social_icon">
+                                        <a href="#" class="fab fa-facebook"></a>
+                                        <a href="#" class="fab fa-twitter"></a>
+                                        <a href="#" class="fab fa-linkedin"></a>
+                                        <!-- <a href="#" class="fab fa-pinterest"></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_bg">
+                        <div class="footer_bg_one"></div>
+                        <div class="footer_bg_two"></div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-sm-7">
+                                <p class="mb-0 f_400">© Athla Technologies 2024 All rights reserved.</p>
+                            </div>
+                            <div class="col-lg-6 col-sm-5 text-right">
+                                <p>Made with <i class="icon_heart"></i> in <a href="#" target="_blank">Athla Technologies</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
