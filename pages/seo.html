@@ -3,33 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Search Engine Optimization</title>
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./css/servicespage.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="../css/servicespage.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
 
+    <style>
+        .landing-page .landing-quort {
+            font-size: calc(var(--font-lg) + 1.5rem);
+        }
+        .item:nth-child(1):hover .icon {
+            animation: glowBounce 1s ease-in-out infinite;
+            background-color: #3498db;
+            box-shadow: 0 0 15px 5px #3498dbac;
+        }
+        .item:nth-child(2):hover .icon {
+            animation: testing 1s ease-in-out infinite;
+            background-color: #73a445;
+        }
+        .item:nth-child(4):hover .icon{
+            background-color: grey;
+        }
+        .item:nth-child(1) > .content{  border:2px solid #3498db; }
+        .item:nth-child(1)::before{  border-color: #3498db; }
+        .item:nth-child(2) > .content{  border:2px solid #73a445; }
+        .item:nth-child(2)::before{  border-color: #73a445; }
+        .item:nth-child(4) > .content{  border:2px solid grey; }
+        .item:nth-child(4)::before{  border-color: grey; }
 
+    </style>
 </head>
 <body>
     <div class="main-container">
         <header class="header">
             <div class="wrap-logo">
-                <img src="./img/logo.svg" alt="" class="logo" />
+                <img src="../img/logo.svg" alt="" class="logo" />
                 <div class="logo-text">ATHLA <span>TECHNOLOGIES</span></div>
             </div>
             <div class="wrap-links">
               <nav class="nav-bar">
-                <a href="./index.html" class="nav-item">Home</a>
-                <a href="#About" class="nav-item">About</a>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../index.html#About" class="nav-item">About</a>
                 <div class="service-nav">
                     <a href="#Services" class="nav-item">Services</a>
                     <div class="service-nav-container">
                       <div class="service-nav-items">
-                        <a href="./service.html">web Design</a>
+                        <a href="./service.html">Web Design</a>
                         <a href="./graphic.html">Graphic Design</a>
                         <a href="./Digital.html">Digital Marketing</a>
                         <a href="./seo.html">Search Engine Optimization</a>
@@ -39,21 +62,23 @@
                   </div>
                 <a href="" class="nav-item">Works</a>
               </nav>
-              <a href="#Contacts" class="contact-btn" target="_blank">Contact Us</a>
+              <a href="../index.html#Contacts" class="contact-btn" target="_blank">Contact Us</a>
             </div>
           </header>
         <main>
             <div class="wrap-p" id="Home">
                 <div class="wrap-scrool">
                     <!-- <div class="slogan">
-                        <img src="./img/bluedots.png" alt="blue dots design" width="60" height="60">
-                        <img src="./img/bluedots.png" alt="blue dots design" width="60" height="60">
+                        <img src="../img/bluedots.png" alt="blue dots design" width="60" height="60">
+                        <img src="../img/bluedots.png" alt="blue dots design" width="60" height="60">
                     </div> -->
                     <section class="landing-page">
                     <div class="landing-inside">
                         <div class="tag">Services</div>
                         <h1 class="landing-quort">
-                            <span>Digital Marketing</span>
+                            <span>Search</span>
+                            <span>Engine</span>
+                            <span>Optimization</span>
                         </h1>
                         <!-- <p class="content">We create digital experiences that captivate and engage from start to finish. Our approach focuses on seamless design and intuitive navigation to keep users connected and satisfied. Let us help you craft an engaging online presence that stands out.</p> -->
                         <!-- <div class="buttons-landing">
@@ -66,10 +91,10 @@
             </div>
             <div class="web-development">
                 <div class="web-dev-img">
-                    <img src="./img/social_media.svg" alt="Web Development">
+                    <img src="../img/seo.svg" alt="Web Development">
                 </div>
                 <div class="web-dev-content">
-                    We offer professional Digital Marketing services to create stunning, responsive, and user-friendly websites that perfectly align with your brand. 
+                    We offer professional Search Engine Optimization services to create stunning, responsive, and user-friendly websites that perfectly align with your brand. 
                     Whether you need a sleek website or a dynamic web application, we ensure top-notch performance, security, and scalability. With a focus on design and functionality, 
                     our solutions enhance user experience and drive real business results. From concept to launch, we handle every aspect to bring your vision to life online.
                 </div>
@@ -80,38 +105,45 @@
                 <h1 class="how-it-works">how it works</h1>
                 <div class="timeline">
                     <div class="item">
-                        <div class="icon">💡</div>
+                        <div class="icon">🔍</div>
                         <div class="content">
-                            <h2 class="how-works-heading">Innovation</h2>
+                            <h2 class="how-works-heading">SEO Audit & Analysis</h2>
                             <p class="how-works-content">We kick off by exploring creative ideas and solutions that align with your vision. Our innovative approach ensures your project stands out in a competitive market.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="icon">🔬</div>
+                        <div class="icon">🧩</div>
                         <div class="content">
-                            <h2 class="how-works-heading">Research</h2>
-                            <p class="how-works-content">Through in-depth analysis of industry trends and user behavior, we gather insights to guide our strategy. This research forms the foundation for a data-driven approach to your project.</p>
+                            <h2 class="how-works-heading">Keyword Research & Strategy</h2>
+                            <p class="how-works-content">Based on your business goals, we conduct in-depth keyword research to discover high-impact search terms. We create a keyword strategy that targets relevant, high-volume keywords your audience is searching for.</p>
                         </div>
                     </div>
                     <div class="item">
                         <div class="icon">♟</div>
                         <div class="content">
-                            <h2 class="how-works-heading">Strategy</h2>
-                            <p class="how-works-content">We craft a customized plan that aligns with your goals, focusing on both short-term wins and long-term success. Our strategy is designed to maximize efficiency and impact.</p>
+                            <h2 class="how-works-heading">On-Page Optimization</h2>
+                            <p class="how-works-content">We optimize your website’s content, meta tags, headings, and internal linking structure. This ensures that every page is search engine-friendly and properly aligned with your target keywords, improving overall relevance.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="icon">🛠</div>
+                        <div class="icon">⚙️</div>
                         <div class="content">
-                            <h2 class="how-works-heading">Implementation</h2>
-                            <p class="how-works-content">Our expert team brings the strategy to life by developing and optimizing your solution with precision. From design to functionality, every detail is executed to perfection.</p>
+                            <h2 class="how-works-heading">Technical SEO Enhancementsn</h2>
+                            <p class="how-works-content">Our team addresses technical issues like site speed, mobile responsiveness, and crawlability. We ensure your website follows best practices for indexing, loading quickly, and providing an optimal user experience.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="icon">🎯</div>
+                        <div class="icon">🔗</div>
                         <div class="content">
-                            <h2 class="how-works-heading">Achievement</h2>
-                            <p class="how-works-content">We measure success by delivering results that exceed your expectations. Whether it’s increased engagement or business growth, we ensure your goals are met with tangible outcomes.</p>
+                            <h2 class="how-works-heading">Link Building & Off-Page SEO</h2>
+                            <p class="how-works-content">We build high-quality backlinks from reputable sites to improve your website’s authority and rankings. Off-page SEO efforts also include social signals and content promotion strategies to drive organic growth.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">📊</div>
+                        <div class="content">
+                            <h2 class="how-works-heading">Performance Tracking</h2>
+                            <p class="how-works-content">We continuously monitor the performance of your SEO efforts, tracking key metrics like organic traffic, rankings, and conversions. Regular reports provide clear insights into progress and inform any necessary adjustments.</p>
                         </div>
                     </div>
                 </div>
@@ -125,7 +157,7 @@
             <div class="work-with-us">
                 <h2 class="h-work-us">Work with us ?</h2>
                 <div class="content">Let's work together to  <br>build something great.</div>
-                <a href="./index.html#Contacts" class="btn-invite">Invite Us &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="../index.html#Contacts" class="btn-invite">Invite Us &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- footer -->

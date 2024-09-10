@@ -3,33 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Video Editing</title>
 
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheete' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./css/servicespage.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="../css/servicespage.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
 
+    <style>
+        .item:nth-child(1):hover .icon {
+            animation: glowBounce 1s ease-in-out infinite;
+            background-color: #c4174b;
+            box-shadow: 0 0 15px 5px #c4174bb2;
+        }
+        .item:nth-child(2):hover .icon {
+            transform: rotateY(360deg);
+            background-color: #cd82f6;
+            color: white;
+        }
 
+        .item:nth-child(3):hover .icon {
+            background: linear-gradient(45deg, #c51d0a, #e3d5ea);
+            animation: piece 1.5s ease-in-e74c3cout infinite;
+            color: #fff;
+        }
+
+        .item:nth-child(2)::before{  border:2px solid #cd82f6; }
+        .item:nth-child(2) > .content{  border:2px solid #cd82f6; }
+
+    </style>
 </head>
 <body>
     <div class="main-container">
         <header class="header">
             <div class="wrap-logo">
-                <img src="./img/logo.svg" alt="" class="logo" />
+                <img src="../img/logo.svg" alt="" class="logo" />
                 <div class="logo-text">ATHLA <span>TECHNOLOGIES</span></div>
             </div>
             <div class="wrap-links">
               <nav class="nav-bar">
-                <a href="./index.html" class="nav-item">Home</a>
-                <a href="#About" class="nav-item">About</a>
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../index.html#About" class="nav-item">About</a>
                 <div class="service-nav">
                     <a href="#Services" class="nav-item">Services</a>
                     <div class="service-nav-container">
                       <div class="service-nav-items">
-                        <a href="./service.html">web Design</a>
+                        <a href="./service.html">Web Design</a>
                         <a href="./graphic.html">Graphic Design</a>
                         <a href="./Digital.html">Digital Marketing</a>
                         <a href="./seo.html">Search Engine Optimization</a>
@@ -39,15 +60,15 @@
                   </div>
                 <a href="" class="nav-item">Works</a>
               </nav>
-              <a href="#Contacts" class="contact-btn" target="_blank">Contact Us</a>
+              <a href="../index.html#Contacts" class="contact-btn">Contact Us</a>
             </div>
           </header>
         <main>
             <div class="wrap-p" id="Home">
                 <div class="wrap-scrool">
                     <!-- <div class="slogan">
-                        <img src="./img/bluedots.png" alt="blue dots design" width="60" height="60">
-                        <img src="./img/bluedots.png" alt="blue dots design" width="60" height="60">
+                        <img src="../img/bluedots.png" alt="blue dots design" width="60" height="60">
+                        <img src="../img/bluedots.png" alt="blue dots design" width="60" height="60">
                     </div> -->
                     <section class="landing-page">
                     <div class="landing-inside">
@@ -66,7 +87,7 @@
             </div>
             <div class="web-development">
                 <div class="web-dev-img">
-                    <img src="./img/video_editing.svg" alt="Web Development">
+                    <img src="../img/video_editing.svg" alt="Web Development">
                 </div>
                 <div class="web-dev-content">
                     We offer professional Video Editing services to create stunning, responsive, and user-friendly websites that perfectly align with your brand. 
@@ -80,38 +101,38 @@
                 <h1 class="how-it-works">how it works</h1>
                 <div class="timeline">
                     <div class="item">
-                        <div class="icon">💡</div>
-                        <div class="content">
-                            <h2 class="how-works-heading">Innovation</h2>
-                            <p class="how-works-content">We kick off by exploring creative ideas and solutions that align with your vision. Our innovative approach ensures your project stands out in a competitive market.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="icon">🔬</div>
-                        <div class="content">
-                            <h2 class="how-works-heading">Research</h2>
-                            <p class="how-works-content">Through in-depth analysis of industry trends and user behavior, we gather insights to guide our strategy. This research forms the foundation for a data-driven approach to your project.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="icon">♟</div>
-                        <div class="content">
-                            <h2 class="how-works-heading">Strategy</h2>
-                            <p class="how-works-content">We craft a customized plan that aligns with your goals, focusing on both short-term wins and long-term success. Our strategy is designed to maximize efficiency and impact.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="icon">🛠</div>
-                        <div class="content">
-                            <h2 class="how-works-heading">Implementation</h2>
-                            <p class="how-works-content">Our expert team brings the strategy to life by developing and optimizing your solution with precision. From design to functionality, every detail is executed to perfection.</p>
-                        </div>
-                    </div>
-                    <div class="item">
                         <div class="icon">🎯</div>
                         <div class="content">
-                            <h2 class="how-works-heading">Achievement</h2>
-                            <p class="how-works-content">We measure success by delivering results that exceed your expectations. Whether it’s increased engagement or business growth, we ensure your goals are met with tangible outcomes.</p>
+                            <h2 class="how-works-heading">Brief Concept</h2>
+                            <p class="how-works-content">We begin by discussing your vision, project goals, and the message you want to convey. This ensures the final video aligns with your brand and objectives, whether it's a commercial, tutorial, or social media clip.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">🎥</div>
+                        <div class="content">
+                            <h2 class="how-works-heading">Footage Selection</h2>
+                            <p class="how-works-content">Next, we gather the raw footage and carefully review it, selecting the best clips that tell your story. This includes choosing the best angles, key moments, and any additional visuals needed for the edit.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">✂️</div>
+                        <div class="content">
+                            <h2 class="how-works-heading">Editing & Assembly</h2>
+                            <p class="how-works-content">Our editing team assembles the selected footage into a cohesive sequence. We focus on narrative flow, timing, and smooth transitions to keep the audience engaged throughout the video.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">🎨</div>
+                        <div class="content">
+                            <h2 class="how-works-heading">Visual & Audio Enhancement</h2>
+                            <p class="how-works-content">We apply color correction, audio balancing, and add any necessary visual effects or graphics. This step ensures that both the visual and sound elements are polished and cohesive, enhancing the overall quality of the video.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">🚀</div>
+                        <div class="content">
+                            <h2 class="how-works-heading">Final Delivery</h2>
+                            <p class="how-works-content">Once the edit is complete, we send the video for your feedback. After making any requested adjustments, we deliver the final product in the desired format, ready for distribution across your platforms.</p>
                         </div>
                     </div>
                 </div>
@@ -125,7 +146,7 @@
             <div class="work-with-us">
                 <h2 class="h-work-us">Work with us ?</h2>
                 <div class="content">Let's work together to  <br>build something great.</div>
-                <a href="./index.html#Contacts" class="btn-invite">Invite Us &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="../index.html#Contacts" class="btn-invite">Invite Us &nbsp; <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- footer -->
