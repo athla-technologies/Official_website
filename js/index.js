@@ -1,24 +1,4 @@
 
-function sendMail() {
-  // Collect form data
-  let formData = {
-    from_name: document.getElementById('name').value,
-    from_email: document.getElementById('email').value,
-    subject: document.getElementById('subject').value,
-    message: document.getElementById('message').value,
-  };
-
-  // Send email via EmailJS
-  emailjs.send('service_59wu5fc', 'template_c5usi76', formData)
-    .then(function(response) {
-      alert('SUCCESS!', response.status, response.text);
-      console.log('send successfully');
-    }, function(error) {
-      alert('FAILED...', error);
-      console.log(error);
-    });
-};
-
 
 
 document.addEventListener("DOMContentLoaded", function () {

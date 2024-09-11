@@ -508,3 +508,20 @@ a{
 
 /*************footer End*****************/
 
+.main-container{
+  position: relative;
+}
+
+
+#form-message{
+  position: fixed;
+  top: 15vh;
+  left: 43vw;
+  z-index: 1000;
+  display: block;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius:10px ;
+  color: var(--theme);
+  
+}
