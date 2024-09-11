@@ -21,6 +21,44 @@
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/index.css" />
     <script defer src="./js/index.js"></script>
+    <script defer src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script defer type="text/javascript">
+
+  // Initialize EmailJS once the script is loaded
+  window.onload = function () {
+    emailjs.init('QKliDW084GHKvUZwR'); // Replace with your EmailJS user ID
+  };
+ 
+  function sendMail(e) {
+    e.preventDefault(); // Prevent form from reloading the page
+
+    // Collect form data
+    let formData = {
+      from_name: document.getElementById('name').value,
+      from_email: document.getElementById('email').value,
+      subject: document.getElementById('subject').value,
+      message: document.getElementById('message').value,
+    };
+
+    // Send email via EmailJS
+    emailjs.send('service_59wu5fc', 'template_c5usi76', formData)
+      .then(function (response) {
+        alert('SUCCESS! Message sent.');
+        console.log('Send successfully:', response.status, response.text);
+      }, function (error) {
+        alert('FAILED... Please try again.');
+        console.log('Error:', error);
+      });
+  };
+
+
+</script>
+<script>
+  // Attach the sendMail function to the form submission event
+  document.getElementById('contact-form').addEventListener('submit', sendMail);
+</script>
+    
+    
   </head>
   <body>
     <div class="main-container">
@@ -232,31 +270,14 @@ Our commitment to innovation and quality ensures that we deliver customized solu
             <img src="./img/social_media.svg" alt="" class="message-img">
 
             </div>
-          <form action="" class="form">
-            <input
-              type="text"
-              placeholder="Enter your Name"
-              id="f-name"
-              name="f-name"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Enter your email"
-              id="l-name"
-              name="l-name"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              id="l-name"
-              name="l-name"
-              required
-            />
-            <textarea name="messages-container" id="" placeholder="Write your Message" rows="5" cols="10" required></textarea>
-            <button type="submit" id="submit-btn">Submit</button>
-          </form>
+           <form id="contact-form" class="form">
+  <input type="text" placeholder="Enter your Name" id="name" name="name" required />
+  <input type="email" placeholder="Enter your Email" id="email" name="email" required />
+  <input type="text" placeholder="Subject" id="subject" name="subject" required />
+  <textarea id="message" placeholder="Write your Message" rows="5" required></textarea>
+  <button type="submit" id="submit-btn">Submit</button>
+</form>
+            
         </div>
         </div>
         <footer class="new_footer_area bg_color">
@@ -322,6 +343,7 @@ Our commitment to innovation and quality ensures that we deliver customized solu
       
       </main>
     </div>
+    
 
   </body>
 </html>
