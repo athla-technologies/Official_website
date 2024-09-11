@@ -59,6 +59,10 @@ a{
     scroll-behavior: smooth!important;
   
   }
+  .row{
+    display: flex;
+    
+  }
 
 /* header */
 
