@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const sliders = document.querySelectorAll(".landing-page");
   let currentIndex = 0;

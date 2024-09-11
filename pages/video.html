@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Editing</title>
 
-    <link rel='stylesheete' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="../css/servicespage.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-
     <style>
         .item:nth-child(1):hover .icon {
             animation: glowBounce 1s ease-in-out infinite;
@@ -23,17 +22,19 @@
             background-color: #cd82f6;
             color: white;
         }
-
+        
         .item:nth-child(3):hover .icon {
             background: linear-gradient(45deg, #c51d0a, #e3d5ea);
             animation: piece 1.5s ease-in-e74c3cout infinite;
             color: #fff;
         }
-
+        
         .item:nth-child(2)::before{  border:2px solid #cd82f6; }
         .item:nth-child(2) > .content{  border:2px solid #cd82f6; }
-
-    </style>
+        
+        </style>
+        <link rel="stylesheet" href="../css/servicespage.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
 </head>
 <body>
     <div class="main-container">
@@ -58,7 +59,7 @@
                       </div>
                     </div>
                   </div>
-                <a href="" class="nav-item">Works</a>
+                  <a href="#How-it-works" class="nav-item">How it Works</a>
               </nav>
               <a href="../index.html#Contacts" class="contact-btn">Contact Us</a>
             </div>
@@ -97,7 +98,7 @@
             </div>
 
             <!-- how it works -->
-            <div class="container">
+            <div class="container"  id="How-it-works">
                 <h1 class="how-it-works">how it works</h1>
                 <div class="timeline">
                     <div class="item">
@@ -157,10 +158,10 @@
                             <div class="col-lg-3 col-md-6">
                                 <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                                     <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                                    <p>Don't miss any updates of our new templates and extensions.!</p>
+                                    <p>Don’t miss any updates of our new templates and extensions.!</p>
                                     <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                                         <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                                        <button class="btn btn_get btn_get_two" type="submit">Submit</button>
+                                        <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
                                         <p class="mchimp-errmessage" style="display: none;"></p>
                                         <p class="mchimp-sucmessage" style="display: none;"></p>
                                     </form>

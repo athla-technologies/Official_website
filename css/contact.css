@@ -37,17 +37,16 @@
     flex-direction: column;
     
   }
-  .wrap-images-form img{
-    align-self: center;
-  }
+
   
   .wrap-images-form h1{
       font-size: var(--font-lg);
   } 
+  
 
   .wrap-images-form img{
-    width: 35rem;
-    aspect-ratio: 1/0.5;
+    align-self: flex-start;
+    width: 30rem;
   }
 
    textarea{
