@@ -17,6 +17,7 @@
 
 .services-container h1{
     font-size: var(--font-lg);
+    font-weight: var(--font-medium);
 }
 
 .list-services{

@@ -1,0 +1,178 @@
+
+
+
+
+:root {
+    --font: satoshi;
+    --theme: #ffffff;
+    --primary-color: #4ea5ff;
+    --secoundary-color: #f2f2f2;
+    --tri-color: #292f36;
+    --quadra-color:#3e88ce;
+    --primary-letter-color: #161b2c;
+    --secoundary-letter-color: #b7bdc8;
+    --font-bolder: 900;
+    --font-medium: 600;
+    --font-thin: 200;
+    --font-lg: clamp(20px, calc(2rem + 3vw), 3rem);
+    --font-md: clamp(18px, calc(0.7rem + 1vw), 2rem);
+    --font-sm: clamp(16px, calc(0.6rem + 1vw), 1rem);
+    --logo-font:"Exo 2", sans-serif;
+    --large-size-padding: 0 8vw;
+  }
+
+
+
+ 
+
+  @media screen and (min-width: 275px) and (max-width:674px){
+    
+     .web-dev-content{
+
+        width: auto;
+        line-height: normal;
+        margin-left: auto;
+        margin-top: auto;
+     }
+     .landing-page{
+        height: unset;
+     }
+
+     .landing-page .landing-inside{
+        gap: 0px;
+     }
+     .landing-page{
+        margin-top: 120px;
+     }
+     .web-dev-img {
+        position: unset;
+    }
+    .landing-page .landing-quort{
+        font-size: calc(var(--font-lg) + -0.5rem);
+        line-height: normal!important;
+        font-size: auto;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .wrap-scrool::before{
+        background: none;
+       
+    }
+    .wrap-scrool{
+       height: unset;
+       min-height: 35vh;
+
+    }
+    .web-development{
+        padding: var(--large-size-padding);
+        height: unset;
+
+    }
+    .web-dev-img img{
+        width: 100%;
+    }
+    .web-dev-content{
+        font-size: calc(var(--font-md) - 5px);
+        font-weight: 600;
+    }
+    .why-athla{
+
+        height: 40vh;
+        background-image: none;
+        background-size: 100%;
+        background-color: var(--secoundary-color);
+        color: var(--primary-letter-color);
+        gap: unset;
+        &>.content{
+            padding: 0 0;
+            font-size: calc(var(--font-md) - 5px);
+        }
+        &>h3 {
+            font-size: calc(var(--font-lg) - 15px);
+          
+        }
+    }
+    .work-with-us {
+        min-height: 40vh;
+        &>.content {
+            font-size: calc(var(--font-lg) - 15px);
+            padding:0;
+            
+        }
+        &>.h-work-us {
+            font-size: 13px;
+        }
+        &>.btn-invite{
+             margin-left: 0;
+        }
+    }
+   
+  }
+
+/* Header Responsiveness style with offcanvas*/
+
+.menu{
+    display: none;
+}
+#offcanvasExample{
+    width:300px;
+}
+  
+.offcanvas-header{
+background-color: var(--primary-color);
+    &>h5{
+        color:var(--theme);
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 600px) {
+    .menu{
+      display: block;
+    }
+    .wrap-links{
+      display: none !important;
+    }
+    .wrap-links-offcanvas > .nav-bar{
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      margin-bottom:10px;
+      & a{
+        color:black;
+        padding:10px;
+        width: 100%;
+        display: block;
+      }
+  
+      & a:hover{
+        background-color: var(--primary-color);
+        border-radius: 5px;
+        color: white;
+      }
+    }
+    .contact-btn{
+      display: block;
+      color:black;
+      padding:10px;
+      width: 100%;
+        &:hover{
+          background-color: var(--primary-color);
+          border-radius: 5px;
+          color: white;
+        }
+    }
+  
+      .service-nav{
+        width: 100%;
+        display: block;
+        &>a::after{
+          display: none;
+        }
+    }
+      .service-nav-container{
+        left:0%;
+    }
+  
+}
+

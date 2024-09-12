@@ -73,14 +73,14 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: -1px;
+  position: sticky;
+  top: 0px;
   
   background-color: rgb(255, 255, 255,0.5);
   width: 100%;
   box-shadow: 0 0 0px rgb(0, 0, 0,0.2);
   backdrop-filter: blur(10px);
-  z-index: 10000;
+  z-index: 100;
   border-bottom: 1px solid rgb(241, 241, 241);
 }
 
@@ -128,6 +128,18 @@ a{
 }
 .nav-item:hover:after {
   width: 100%;
+}
+
+#offcanvasExample{
+  width:300px;
+}
+
+.offcanvas-header{
+  background-color: var(--primary-color);
+  &>h5{
+    color:var(--theme);
+    font-weight: 600;
+  }
 }
 
 .nav-bar .nav-item:hover {
@@ -184,6 +196,11 @@ a{
   color: var(--secoundary-color);
 }
 
+.menu{
+  font-size: 22px;
+  display: none;
+}
+
 .wrap-scrool {
     position: relative;
     display: flex;
@@ -205,7 +222,7 @@ a{
     margin: 0% auto;
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    height: 85%;
     display: flex;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -457,7 +474,7 @@ a{
 
 #nextSlide{
   position: absolute;
-  top:calc(50% - 25px) ;
+  top:calc(40%) ;
   right: 1%;
   z-index: 100;
 
@@ -465,7 +482,7 @@ a{
 #prevSlide{
   
   position: absolute;
-  top:calc(50% - 25px) ;
+  top:calc(40%) ;
   left: 1%;
   z-index: 100;
   transform: rotate(180deg);
@@ -524,4 +541,134 @@ a{
   border-radius:10px ;
   color: var(--theme);
   
+}
+
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  .landing-inside{
+    width:100% !important;
+  }
+  .about-img{
+    transform: none;
+  }
+  .about-page{
+    padding:30px 20px;
+    display: block;
+  }
+  .wrap-about{
+    padding: 25px;
+  }
+  .img-web-design{
+    width:75% !important;
+  }
+  .services .heading{
+    margin-top:20px;
+  }
+  .services img{
+    margin:auto;
+    /* aspect-ratio: 1/0.25; */
+  }
+  .wrap-contacts{
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap-images-form{
+    text-align: center;
+  }
+  .landing-page .landing-quort, .services-container h1, .contacts-container .heading, .wrap-images-form h1{
+    font-size: calc(var(--font-md) + 15px);
+  }
+
+  .about-content>h1{
+    font-size: calc(var(--font-md) + 15px);
+  }
+  .about-content>p, .services h1, .services p{
+    font-size:calc(var(--font-sm) - 2px)
+  }
+  .contacts-container{
+    gap:5vh;
+  }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 482px) {
+  .about-img{
+    width: clamp(215px, calc(20vw + 5%), 283px);
+  }
+  .wrap-contacts{
+    width:100%;
+  }
+  .wrap-images-form{
+    width:100%;
+  }
+  .wrap-images-form img{
+    width:60vw;
+    margin:auto;
+  }
+  .form input{
+    min-width:17rem !important;
+  }
+  .form{
+    width:100%;
+  }
+  .contacts-container{
+    gap: 5vh;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1300px) {
+    .wrap-contacts{
+      justify-content: center;
+    }
+}
+
+/* Header Responsiveness style */
+@media screen and (min-width:320px) and (max-width: 600px) {
+
+  .menu{
+    display: block;
+  }
+  .wrap-links{
+    display: none !important;
+  }
+  .wrap-links-offcanvas > .nav-bar{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-bottom:10px;
+    & a{
+      color:black;
+      padding:10px;
+      width: 100%;
+      display: block;
+    }
+
+    & a:hover{
+      background-color: var(--primary-color);
+      border-radius: 5px;
+      color: white;
+    }
+  }
+  .contact-btn{
+    display: block;
+    color:black;
+    padding:10px;
+    width: 100%;
+      &:hover{
+        background-color: var(--primary-color);
+        border-radius: 5px;
+        color: white;
+      }
+    }
+
+    .service-nav{
+      width: 100%;
+      display: block;
+      &>a::after{
+        display: none;
+      }
+    }
+    .service-nav-container{
+      left:0%;
+    }
+
 }

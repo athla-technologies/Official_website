@@ -14,24 +14,24 @@
     <link rel='stylesheet' href='https://themify.me/wp-content/themes/themify-v32/themify-icons/themify-icons.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!-- Style sheets -->
     <link rel="stylesheet" href="./css/services.css" />
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/footerresponsive.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/index.css" />
     <script defer src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function() {
-        // Initialize EmailJS with your public key
-        emailjs.init("QKliDW084GHKvUZwR");
-      })();
-    </script> 
   </head>
   <body>
     <div class="main-container">
       <header class="header">
+       
+        <!-- Normal Header Menu -->
         <div class="wrap-logo">
             <img src="./img/logo.svg" alt="" class="logo" />
             <div class="logo-text">ATHLA <span>TECHNOLOGIES</span></div>
@@ -55,11 +55,50 @@
           </nav>
           <a href="#Contacts" class="contact-btn">Contact Us</a>
         </div>
+
+         <!-- offcanvas navigation menu -->
+         <div class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </header>
+
+      <!-- Toast for Contact us -->
       <p id="form-message" style="display:none;"></p>
+
+      <!-- Main Container -->
       <main class="main">
+        <!-- Off canvas navigation menu -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Quick Access</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="wrap-links-offcanvas">
+              <nav class="nav-bar">
+                <a href="#Home" class="nav-item">Home</a>
+                <a href="#About" class="nav-item">About</a>
+                <div class="service-nav">
+                  <a href="#Services" class="nav-item">Services</a>
+                  <div class="service-nav-container">
+                    <div class="service-nav-items">
+                      <a href="./pages/service.html">Web Development</a>
+                      <a href="./pages/graphic.html">Graphic Design</a>
+                      <a href="./pages/Digital.html">Digital Marketing</a>
+                      <a href="./pages/seo.html">Search Engine Optimization</a>
+                      <a href="./pages/video.html">Video Editing</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <a href="#Contacts" class="contact-btn">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Landing page -->
         <div class="wrap-p" id="Home">
-          <button id="prevSlide"><i class="fa-solid fa-arrow-right"></i></button>
+          <!-- <button id="prevSlide"><i class="fa-solid fa-arrow-right"></i></button> -->
           <div class="wrap-scrool">
             <section class="landing-page" id="slider1">
               <div class="landing-inside">
@@ -136,7 +175,7 @@
             <section class="landing-page" id="slider5">
               <div class="landing-inside">
                 <div class="tag">Video Editing</div>
-                <h1 class="landing-quort">
+                <h1 class="landing-quort ">
                   Professional Video Editing Services to Enhance Your Visual
                   Storytelling
                 </h1>
@@ -146,27 +185,27 @@
                   <a href="./pages/video.html" class="btn-slider"><svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>Explore</a>
                 </div>
               </div>
-              <div class="wrap-img">
+              <div class="wrap-img d-lg-flex d-none">
                 <img
                   src="./img/video_editing.svg"
-                  class="image"
+                  class="image "
                   id="video-editing"
                 />
               </div>
             </section>
           </div>
-          <button id="nextSlide"><i class="fa-solid fa-arrow-right"></i></button>
+          <!-- <button id="nextSlide"><i class="fa-solid fa-arrow-right"></i></button> -->
         </div>
+
+        <!-- About Page -->
         <div class="about-page" id="About">
-          <div class="wrap-about">
+          <div class="wrap-about d-lg-flex d-block">
             <div class="about-content">
               <h1>About Us</h1>
               <p>
                 ATHLA Technologies is an innovative Salem-based company specializing in Web Development, Graphic Design, Digital Marketing, SEO, and Video Editing. We provide tailored digital solutions that enhance your online presence and drive growth.
-
-We understand the importance of a strong digital footprint in today’s competitive landscape. Whether you need a visually stunning website, compelling graphics, effective SEO, targeted digital marketing, or engaging video content, ATHLA Technologies offers a one-stop solution aligned with your business goals.
-
-Our commitment to innovation and quality ensures that we deliver customized solutions that exceed your expectations. As your partner in success, we strive to build enduring relationships by providing cost-effective, high-quality services. Let’s collaborate and elevate your digital presence to new heights.
+                We understand the importance of a strong digital footprint in today’s competitive landscape. Whether you need a visually stunning website, compelling graphics, effective SEO, targeted digital marketing, or engaging video content, ATHLA Technologies offers a one-stop solution aligned with your business goals.
+                Our commitment to innovation and quality ensures that we deliver customized solutions that exceed your expectations. As your partner in success, we strive to build enduring relationships by providing cost-effective, high-quality services. Let’s collaborate and elevate your digital presence to new heights.
               </p>
               <!-- <a href="" class="about-btn">Learn more</a> -->
             </div>
@@ -180,17 +219,19 @@ Our commitment to innovation and quality ensures that we deliver customized solu
             </div>
           </div>
         </div>
+
+        <!-- Services Page -->
         <div class="services-container" id="Services">
           <h1 class="heading">Our Services</h1>
           <div class="list-services">
-            <div class="services">
+            <div class="services d-lg-flex d-block">
               <a href="./pages/service.html" class="service-navigation"><h1 class="heading">Web Development <i class="fa-solid fa-arrow-right"></i></h1></a>
               <img src="./img/web_design.jpg" alt="" class="img-web-design" />
               <p class="services-c">
                 Our Web Development services focus on creating visually appealing and user-friendly websites that reflect your brand’s identity. We design responsive, modern websites that engage visitors and deliver a seamless browsing experience across all devices. <br> <a href="./pages/service.html" class="read-more-btn">Read more</a>
               </p>
             </div>
-            <div class="services">
+            <div class="services d-lg-flex d-block">
               <a href="./pages/graphic.html" class="service-navigation"><h1 class="heading">Graphic Design <i class="fa-solid fa-arrow-right"></i></h1></a>
               <img
                 src="./img/graphic-design.jpg"
@@ -201,21 +242,21 @@ Our commitment to innovation and quality ensures that we deliver customized solu
                 Our graphic design team crafts eye-catching visuals that communicate your message effectively. From logos to brochures, we create designs that resonate with your audience and enhance your brand's visual appeal. <br> <a href="./pages/graphic.html" class="read-more-btn">Read more</a>
               </p>
             </div>
-            <div class="services">
+            <div class="services d-lg-flex d-block">
               <a href="./pages/Digital.html" class="service-navigation"><h1 class="heading">Digital Marketing <i class="fa-solid fa-arrow-right"></i></h1></a>
               <img src="./img/social_media.svg" alt="" class="img-web-design" />
               <p class="services-c">
                 We provide comprehensive digital marketing services to help you reach and engage your target audience. Through targeted campaigns, social media management, and content creation, we drive traffic, boost engagement, and increase conversions. <br> <a href="./pages/Digital.html" class="read-more-btn">Read more</a>
               </p>
             </div>
-            <div class="services">
+            <div class="services d-lg-flex d-block">
               <a href="./pages/seo.html" class="service-navigation"><h1 class="heading">Search Engine Optimization <i class="fa-solid fa-arrow-right"></i></h1></a>
               <img src="./img/seo.svg" alt="" class="img-web-design" />
               <p class="services-c">
                 Our SEO services are designed to improve your website's visibility on search engines. By optimizing your content and website structure, we help you achieve higher rankings, attract more organic traffic, and grow your online presence. <br> <a href="./pages/seo.html" class="read-more-btn">Read more</a>
               </p>
             </div>
-            <div class="services">
+            <div class="services d-lg-flex d-block">
               <a href="./pages/video.html" class="service-navigation"><h1 class="heading">Video Editing <i class="fa-solid fa-arrow-right"></i></h1></a>
               <img
                 src="./img/video_editing.svg"
@@ -233,7 +274,7 @@ Our commitment to innovation and quality ensures that we deliver customized solu
         <!-- contact us form -->
         <div class="contacts-container" id="Contacts">
           <div class="heading">Contact Us</div>
-          <div class="wrap-contacts">
+          <div class="wrap-contacts flex-wrap">
             <div class="wrap-images-form">
               <h1>Let's talk about everything!</h1>
               <p>Feel free to reach out to us with our Contact us form!</p>
@@ -241,7 +282,7 @@ Our commitment to innovation and quality ensures that we deliver customized solu
             </div>
             
             <!-- Contact Form -->
-            <form id="contact-form" class="form">
+            <form id="contact-form" class="form row">
               <input
                 type="text"
                 placeholder="Enter your Name"
@@ -279,6 +320,7 @@ Our commitment to innovation and quality ensures that we deliver customized solu
           </div>
         </div>
 
+        <!-- Footer -->
         <footer class="new_footer_area bg_color">
           <div class="new_footer_top">
               <div class="container">
@@ -341,47 +383,8 @@ Our commitment to innovation and quality ensures that we deliver customized solu
       
       </main>
     </div>
-    <script>
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
-    
-        // Show loading message
-        const messageElem = document.getElementById("form-message");
-        messageElem.style.display = "block";
-        messageElem.innerHTML = "Sending message...";
-    
-        // Collect form data
-        let name = document.getElementById('user_name').value;
-        let email = document.getElementById('user_email').value;
-        let subject = document.getElementById('subject').value;
-        let message = document.getElementById('message').value;
-    
-        // EmailJS service - send form data
-        emailjs.send('service_59wu5fc', 'template_c5usi76', {
-          name: name,
-          email: email,
-          subject: subject,
-          message: message
-        })
-        .then(function(response) {
-          messageElem.innerHTML = "Message sent successfully!";
-          
-          // Hide the message after 4 seconds
-          setTimeout(function() {
-            messageElem.style.display = "none";
-          }, 4000);
-    
-          document.getElementById('contact-form').reset(); // Reset form
-          
-        }, function(error) {
-          messageElem.innerHTML = "Failed to send message. Please try again.";
-    
-          // Hide the message after 4 seconds
-          setTimeout(function() {
-            messageElem.style.display = "none";
-          }, 4000);
-        });
-      });
-    </script>
+  
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

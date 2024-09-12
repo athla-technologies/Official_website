@@ -9,8 +9,13 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../css/servicespage.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/footerresponsive.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <style>
         .item:nth-child(1):hover .icon {
             animation: glowBounce 1s ease-in-out infinite;
@@ -48,7 +53,7 @@
                 <a href="../index.html" class="nav-item">Home</a>
                 <a href="../index.html#About" class="nav-item">About</a>
                 <div class="service-nav">
-                    <a href="#Services" class="nav-item">Services</a>
+                    <a href="#" class="nav-item">Services</a>
                     <div class="service-nav-container">
                       <div class="service-nav-items">
                         <a href="./service.html">Web Development</a>
@@ -63,8 +68,44 @@
               </nav>
               <a href="../index.html#Contacts" class="contact-btn">Contact Us</a>
             </div>
+
+            <!-- offcanvas navigation menu -->
+            <div class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars"></i>
+            </div>
           </header>
         <main>
+
+            <!-- Off canvas navigation menu -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Quick Access</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="wrap-links-offcanvas">
+                        <nav class="nav-bar">
+                            <a href="../index.html#Home" class="nav-item">Home</a>
+                            <a href="../index.html#About" class="nav-item">About</a>
+                            <div class="service-nav">
+                                <a href="#" class="nav-item">Services</a>
+                                <div class="service-nav-container">
+                                    <div class="service-nav-items">
+                                        <a href="./service.html">Web Development</a>
+                                        <a href="./graphic.html">Graphic Design</a>
+                                        <a href="./Digital.html">Digital Marketing</a>
+                                        <a href="./seo.html">Search Engine Optimization</a>
+                                        <a href="./video.html">Video Editing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <a href="#How-it-works" class="nav-item">How it Works</a>
+                    </nav>
+                    <a href="../index.html#Contacts" class="contact-btn">Contact Us</a>
+                </div>
+                </div>
+            </div>
+
             <div class="wrap-p" id="Home">
                 <div class="wrap-scrool">
                     <!-- <div class="slogan">
@@ -211,5 +252,8 @@
             </footer>
         </main>
     </div>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
 </body>
 </html>
