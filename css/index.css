@@ -531,9 +531,11 @@ a{
 
 
 #form-message{
-  position: fixed;
+  position: sticky;
   top: 15vh;
-  left: 43vw;
+  /* left: 43vw; */
+  width: fit-content;
+  margin: 0 auto;
   z-index: 1000;
   display: block;
   background-color: var(--primary-color);
