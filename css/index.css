@@ -96,9 +96,9 @@ a{
   align-items: center;
 }
 .header .logo {
-  width: 36px;
-  height: 100px;
-  object-fit: cover;
+  width: 49px;
+  height: 60px;
+  object-fit: scale-down;
 }
 .header .nav-bar {
   display: flex;
